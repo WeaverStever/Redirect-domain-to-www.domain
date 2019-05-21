@@ -1,7 +1,7 @@
 How to redirect a root domain to the www version.
 
 <b>The problem:</b>
-<p>I have a domain from Google, I want to keep the root domain at Google to take advantage of their email redirect functionality, but the www address is hosted on an Appache2 server on DigitalOcean.  I have the www version working by providing the www alias to the Google DNS, but this leaves the root domain with no host.</p>
+<p>I have a domain from Google, I want to keep the root domain at Google to take advantage of their email redirect functionality, but the www address is hosted on an Apache2 server on DigitalOcean.  I have the www version working by providing the www alias to the Google DNS, but this leaves the root domain with no host.</p>
 
 <p>Again, my goal is to keep DNS at Gootle, so a Google solution seems appropriate, but an .htaccess 301 redirect does not seem to be an option with Gcloud / App Engine.
 
