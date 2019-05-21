@@ -7,4 +7,8 @@ How to redirect a root domain to the www version.
 
 <p><b>For this solution,</b> the first step is to create a Python2.7 account for <a href="https://cloud.google.com/appengine/docs/standard/python/quickstart">Quickstart for Python App Engine Standard Environment</a>.  If you are using a later version of Python, perhaps these documents will help you adapt this solution to your version.</p> 
 
-<p>If you followed the Quickstart, you should have a website working at http://[YOUR_PROJECT_ID].appspot.com. You will need your Gcloud  [YOUR_PROJECT_ID] (not the entire URL), you will need add the ID to the gae_deploy.sh file in the python27 directory.<>   
+<p>If you followed the Quickstart, you should have a website working at [YOUR_PROJECT_ID].appspot.com. Download or clone this GIT.</p>
+
+<p>You will need your Gcloud  [YOUR_PROJECT_ID] (not the entire URL), add the ID to the gae_deploy.sh file in the python27 directory.</p>
+
+<p> In the python27/code directory, edit main.py file and modify https://www.example.com/ to your desired URL. Here is the documentation for the web.py redirect.  http://webpy.org/cookbook/redirect%2Bseeother   
