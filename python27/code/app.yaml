@@ -1,0 +1,24 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+
+#be sure to provide your favicon.ico in the code directory
+- url: /favicon\.ico
+  static_files: /favicon.ico
+  upload: /favicon\.ico
+
+- url: /
+  script: main.app
+  
+- url: /.*
+  script: main.app
+
+libraries:
+- name: ssl
+  version: latest
+
+skip_files:
+- ^(.*/)?\.pyc$
+- ^(.*/)?.*~$  
